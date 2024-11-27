@@ -55,6 +55,10 @@ body{
   color: red
 }
 
+.signup2{
+  display: none;
+}
+
 .signup{
   color: white;
   background-color: black;
@@ -91,6 +95,7 @@ body{
   margin-top: 2%;
   color: grey;
   line-height: 25px;
+  width: 65%;
 }
 
 .image1{
@@ -213,6 +218,7 @@ body{
   display: flex;
   width: 30%;
   /* justify-content: space-between; */
+  /* border: 1px solid green; */
 }
 
 .indServicecontainer img{
@@ -255,7 +261,7 @@ body{
 
 .page3content h2{
   margin: 0;
-  line-height: 50px;
+  line-height: 55px;
   font-size: 45px;
   font-weight: 500;
 }
@@ -270,6 +276,7 @@ body{
   justify-content: space-between;
   align-items: center;
   margin: 0 5% 0 0;
+  /* border: 1px solid brown; */
 }
 
 .indpagecontent p{
@@ -321,7 +328,7 @@ body{
 .designcontent h1{
   margin: 0 0 3% 0;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 50px;
   /* background-color: red; */
 }
 
@@ -355,6 +362,8 @@ body{
   display: flex;
   align-items: flex-start;
   /* justify-content: center; */
+  /* border: 1px solid brown; */
+  width: 90%;
 }
 
 .slashandmessage img{
@@ -416,7 +425,7 @@ body{
 
 .customerreview h1{
   margin-top: 0;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 500;
 }
 
@@ -447,11 +456,14 @@ body{
 
 .indcustomerreviewwords{
   line-height: 24px;
+  width: 100%;
+  /* border: 1px solid red; */
 }
 
 .indcustomerreviewwritercard{
   display: flex;
   margin-top: 8%;
+  /* border: 1px solid red; */
 }
 
 .indcustomerreviewwritercard img{
@@ -469,7 +481,6 @@ body{
 }
 
 .page6{
-  margin-top: 5%;
   height: 100vh;
   text-align: center;
   /* border: 3px solid blue; */
@@ -477,19 +488,22 @@ body{
 
 .subscription{
   /* border: 2px solid green; */
-  height: 50vh;
+  height: 45vh;
 }
 
 .subscribe{
-  margin-top: 1%;
   font-size: 45px;
   font-weight: 500;
-  margin-bottom: 4%;
+  /* border: 1px solid brown; */
+  width: 70%;
+  margin: 1% auto 2% auto;
 }
 
 .subscribetext{
   color: grey;
-  margin-bottom: 4%;
+  width: 60%;
+  margin: 1% auto 3% auto;
+  /* border: 1px solid brown; */
 }
 
 .mailandsubmit{
@@ -519,13 +533,18 @@ body{
   border-radius: 3px;
 }
 
+.subscribebutton:hover{
+  background: rgb(78, 74, 74);
+}
+
+
 .otherservices{
   padding-top: 4%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: rgb(49, 39, 39);
-  height: 50vh;
+  height: 54vh;
   color: white;
 }
 
@@ -564,11 +583,241 @@ body{
   top: -15%;
 }
 
-a {
+.serviceschedule a{
   cursor: grab;
   text-decoration: none;
 }
 
 a:hover{
   color: red;
+}
+
+@media screen and (max-width:700px){
+  body{
+    padding: 0 3%;
+  }
+  /* Page 1 */
+  .page1{
+    height: auto;
+    width: 100%;
+  }
+  .headercontainer{
+    height: auto;
+    flex-direction: column;
+  }
+  .logo{
+    height: 40%;
+    margin: auto;
+  }
+  .navigation{
+    height: 40%;
+    width: 90%;
+    margin: auto;
+  }
+  .navigation p{
+    font-size: 12px;
+  }
+  .signup2{
+    width: 30%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 2%;
+    border-radius: 5px;
+    cursor: grab;
+    border: none;
+    display: block;
+  }
+  .signup2:hover{
+    background: rgb(78, 74, 74);
+  }
+  .signup{
+    display: none;
+  }
+  .designpicture{
+    height: auto;
+    margin-bottom: 3%;
+  }
+  .designpicture h1{
+    font-size: 25px;
+  }
+  .designpicture p{
+    font-size: 12px;
+    width: 100%;
+  }
+  .image1{
+    width: 40%;
+    margin-left: 1%;
+  }
+  .buttonpicture{
+    height: auto;
+  }
+  .bottonpicture{
+    height: auto;
+  }
+  .achievements{
+    width: 70%;
+  }
+  .startprojectbutton{
+    margin: auto;
+  }
+  .indachivementitem h1{
+    font-size: 25px;
+  }
+  .indachivementitem p{
+    font-size: 10px;
+  }
+  .imagecontainer{
+    /* display: none; */
+    width: 30%;
+    margin-left: 4%;
+  }
+  .image2{
+    width: 40%;
+    left: -5%;
+  }
+  .image3{
+    width: 80%;
+    margin-left: 5%;
+    right: 0%;
+  }
+  .image4{
+    width: 30%;
+  }
+
+  /* Page 2 */
+  .page2{
+    height: auto;
+  }
+  .Servicecontainer{
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .indServicecontainer{
+    width: 90%;
+  }
+  .indServicecontainer h3{
+    margin-bottom: 0;
+  }
+
+  /* Page 3 */
+  .page3{
+    flex-direction: column;
+    height: auto;
+  }
+  .page3pic img{
+    width: 100%;
+  }
+  .page3content{
+    width: 90%;
+    margin: auto;
+  }
+  .page3content h2{
+    font-size: 30px;
+    text-align: center;
+  }
+  .learnmorebutton{
+    width: 50%;
+    margin: auto;
+  }
+  /* Page 4 */
+  .page4{
+    flex-direction: column;
+  }
+  .designcontent{
+    height: auto;
+    width: 100%;
+  }
+  .designcontent h1{
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .slashandmessage p{
+    font-size: 14px;
+  }
+  .page3designpicture{
+    width: 90%;
+    margin: auto;
+  }
+  .page3designpicture img{
+    width: 100%;
+    margin: 0;
+    align-self: center;
+  }
+
+  /* Page 5 */
+  .page5{
+    flex-direction: column;
+    height: auto;
+  }
+  .cutoutimg{
+    display: none;
+  }
+  .customerreview{
+    width: 100%;
+    height: auto;
+  }
+  .customerreview h1{
+    font-size: 35px;
+    text-align: center;
+  }
+  .customerreviewpic{
+    flex-direction: column;
+    position: static;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .indcustomerreview{
+    margin-bottom: 2%;
+  }
+  .indcustomerreview img{
+    margin: 5% 0 5% 0;
+  }
+  .indcustomerreviewwords{
+    font-size: 15px;
+  }
+  .indcustomerreviewwritercard{
+    width: 70%;
+    margin: auto;
+  }
+  .indcustomerreviewwritercard img{
+    margin-right: 5%;
+  }
+
+  /* Page 6 */
+  .page6{
+    height: auto;
+  }
+  .subscription{
+    height: auto;
+  }
+  .subscribe{
+    font-size: 25px;
+    width: 100%;
+    margin: 1% auto 10% auto;
+  }
+  .subscribetext{
+    width: 100%;
+    margin: 1% auto 10% auto;
+  }
+  .mailandsubmit{
+    width: 90%;
+    margin-bottom: 10%;
+  }
+  .otherservices{
+    height: auto;
+    flex-direction: column;
+  }
+  .serviceschedule{
+    align-items: center;
+  }
+  .serviceschedulelast{
+    align-items: center;
+  }
 }
